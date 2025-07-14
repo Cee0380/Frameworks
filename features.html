@@ -1,3 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Features</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-blue-600 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center">Feature Analysis</h1>
+ <nav> 
+      <ul class="text-center mt-2 space-x-4">
+        <li><a href="index.html" class="underline">Home</a></li>
+        <li><a href="comparison.html" class="underline">Comparison</a></li>
+        <li><a href="features.html" class="underline">Features</a></li>
+        <li><a href="use-cases.html" class="underline">Use Cases</a></li>
+        <li><a href="interactivity.html" class="underline">Vote</a></li>
+        <li><a href="quiz.html" class="underline">Quiz</a></li>
+        <li><a href="references.html" class="underline">References</a></li>
+      </ul>
+    </nav>
+  <script src="script.js"></script>
 <!-- features.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,27 +32,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Feature Analysis</h1>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="comparison.html">Comparison</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="references.html">References</a></li>
-      </ul>
-    </nav>
+    
   </header>
   <main>
-    <h2>Responsive Design</h2>
+    <h2 class="text-2xl font-bold mb-4">Responsive Design</h2>
+    <p>Both Bootstrap and Tailwind CSS support responsive design, but they approach it differently. Bootstrap uses a grid system with predefined classes, while Tailwind uses utility classes that can be combined to create responsive layouts.</p>
     <p>Both frameworks offer responsive design capabilities. Bootstrap uses breakpoints and predefined grid systems. Tailwind uses utility classes like <code>md:flex</code> or <code>lg:grid</code>.</p>
-
-    <h2>Customization</h2>
-    <p>Bootstrap allows overriding SASS variables. Tailwind provides full design control via its configuration file and utility-first classes.</p>
-
-    <h2>JavaScript Integration</h2>
-    <p>Bootstrap comes with pre-built JS components. Tailwind doesn't include JS by default, allowing developers to integrate with their preferred frameworks.</p>
+<h2 class="text-2xl font-bold mb-4">Customization</h2>
+   
+    <p>Bootstrap allows customization through SASS variables , while Tailwind provides a configuration file for extensive design control. Tailwind's utility-first approach allows for more granular control over styles.</p>
+<h2 class="text-2xl font-bold mb-4">JavaScript Integration</h2>
+    <p>Bootstrap comes with pre-built JavaScript components. Tailwind does not include JavaScript by default, allowing developers to integrate with their preferred frameworks.</p>
+<h2 class="text-2xl font-bold mb-4">Community and Ecosystem</h2>
+    <p>Bootstrap has a larger community and more third-party plugins. Tailwind's ecosystem
   </main>
   <footer>
     <p>&copy; 2025 CSS Frameworks Analysis</p>
