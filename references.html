@@ -2,35 +2,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>References | CSS Frameworks</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>References | Bootstrap vs Tailwind CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <h1>References & Resources</h1>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="comparison.html">Comparison</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="references.html">References</a></li>
+ <body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-blue-600 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center">Bootstrap vs Tailwind CSS</h1>
+    <nav> 
+      <ul class="text-center mt-2 space-x-4">
+        <li><a href="index.html" class="underline">Home</a></li>
+        <li><a href="comparison.html" class="underline">Comparison</a></li>
+        <li><a href="features.html" class="underline">Features</a></li>
+        <li><a href="use-cases.html" class="underline">Use Cases</a></li>
+        <li><a href="interactivity.html" class="underline">Vote</a></li>
+        <li><a href="quiz.html" class="underline">Quiz</a></li>
+        <li><a href="references.html" class="underline">References</a></li>
       </ul>
-    </nav>
+     </nav>
   </header>
-  <main>
-    <h2>APA References</h2>
-    <ul>
-      <li>Bootstrap. (2025). <em>Official documentation</em>. https://getbootstrap.com</li>
-      <li>Tailwind CSS. (2025). <em>Official documentation</em>. https://tailwindcss.com</li>
-      <li>W3Schools. (2025). <em>Responsive Web Design</em>. https://www.w3schools.com</li>
-      <li>Mozilla Developer Network (MDN). (2025). <em>CSS Reference</em>. https://developer.mozilla.org</li>
-      <li>GeeksforGeeks. (2025). <em>CSS Frameworks Comparison</em>. https://www.geeksforgeeks.org</li>
-    </ul>
+
+  <main class="container-md px-4 py-10">
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Primary Sources</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" class="text-blue-700 underline">
+            Bootstrap Documentation
+          </a> – Official docs with components, layout system, and responsive tools.
+        </li>
+        <li>
+          <a href="https://tailwindcss.com/docs" target="_blank" class="text-blue-700 underline">
+            Tailwind CSS Documentation
+          </a> – Official utility class reference and configuration guide.
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/bootstrap5/" target="_blank" class="text-blue-700 underline">
+            W3Schools Bootstrap 5 Tutorial
+          </a> – Beginner-friendly overview of Bootstrap classes and components.
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/news/bootstrap-vs-tailwind-css/" target="_blank" class="text-blue-700 underline">
+            Bootstrap vs Tailwind – FreeCodeCamp
+          </a> – A practical breakdown with examples and pros/cons.
+        </li>
+        <li>
+          <a href="https://www.smashingmagazine.com/2020/02/tailwindcss-utility-first-css/" target="_blank" class="text-blue-700 underline">
+            Smashing Magazine: Tailwind CSS Review
+          </a> – An article analyzing Tailwind’s impact on modern UI development.
+        </li>
+      </ul>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold mb-4">Supplemental Resources</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <a href="https://www.youtube.com/watch?v=4sosXZsdy-s" target="_blank" class="text-blue-700 underline">
+            Tailwind CSS Crash Course (YouTube)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=9cKsq14Kfsw" target="_blank" class="text-blue-700 underline">
+            Bootstrap 5 Full Tutorial (YouTube)
+          </a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/a-comparison-of-css-frameworks/" target="_blank" class="text-blue-700 underline">
+            CSS-Tricks: Framework Comparisons
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.logrocket.com/bootstrap-vs-tailwind-css/" target="_blank" class="text-blue-700 underline">
+            LogRocket: Bootstrap vs Tailwind CSS
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
-  <footer>
+
+  <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
 </body>
