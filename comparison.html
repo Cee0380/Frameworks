@@ -1,4 +1,4 @@
-
+<!--comparison.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,33 +37,41 @@
 <body>
   </header>
   <main>
-    <h2 class="text-2xl font-bold mb-4">Bootstrap vs Tailwind</h2>
+    <h2 class="text-2xl font-bold mb-4 text-center">Bootstrap vs Tailwind</h2>
     <p>Bootstrap and Tailwind CSS are two popular CSS frameworks, each with its own strengths and weaknesses. Below is a comparison of their key features:</p>
     <table>
       <tr>
         <th>Feature</th>
-        <th>Bootstrap</th>
-        <th>Tailwind CSS</th>
+        <th class="p-2 border bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700" >Bootstrap</th>
+            <th class="p-2 border bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700" >Tailwind CSS</th>
+      
       </tr>
       <tr>
         <td>Design Philosophy</td>
-        <td>Component-based</td>
-        <td>Utility-first</td>
+        <td>Component-based, includes ready-to-use UI elements and a fixed design system.</td>
+        <td>Utility-first, prioritizes customization by composing classes directly in markup.</td>
       </tr>
       <tr>
         <td>Customization</td>
-        <td>Theme variables</td>
-        <td>Utility classes and config files</td>
+        <td>Customizable via Sass variables, but the design system is opinionated.</td>
+        <td>Designed for total control with custom configuration, plugins, and themes.</td>
       </tr>
       <tr>
-        <td>JavaScript</td>
-        <td>Integrated components</td>
-        <td>Framework-agnostic</td>
+        <td>Developer Experience</td>
+        <td>Ideal for rapid prototyping and teams without dedicated designers.</td>
+        <td>Favors teams who want detailed control and design-system scalability.</td>
       </tr>
     </table>
+    
+    <section class="text-center mb-8">
+      <h3 class="text-2xl font-semibold mt-4 mb-2">Explore Examples</h3>
+      <p class="mb-4">See how each framework handles the same UI components:</p>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-200">View Demo</button>
+    </section>
   </main>
-  <footer>
+  <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
 </body>
 </html>
+
