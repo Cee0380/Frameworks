@@ -4,30 +4,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactivity | Responsive Design</title>
+  <title>Interactivity | Bootstrap vs Tailwind CSS</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="interactivity.html">Interactivity</a></li>
-      <li><a href="use-cases.html">Use Cases</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="references.html">References</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h1>Why Interactivity Matters</h1>
-    <p>Interactive elements engage users and provide a dynamic browsing experience. Common techniques include:</p>
-    <ul>
-      <li>Buttons and Forms</li>
-      <li>Sliders and Carousels</li>
-      <li>Hover and Click Effects</li>
-    </ul>
-    <img src="https://via.placeholder.com/400x200" alt="Interactivity Example" />
-    <p>Learn more at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">MDN Web Docs</a>.</p>
-  </div>
-  <script src="script.js"></script>
+  <!-- Header -->
+ <body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-blue-600 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center">Bootstrap vs Tailwind CSS</h1>
+    <nav> 
+      <ul class="text-center mt-2 space-x-4">
+        <li><a href="index.html" class="underline">Home</a></li>
+        <li><a href="comparison.html" class="underline">Comparison</a></li>
+        <li><a href="features.html" class="underline">Features</a></li>
+        <li><a href="use-cases.html" class="underline">Use Cases</a></li>
+        <li><a href="interactivity.html" class="underline">Vote</a></li>
+        <li><a href="quiz.html" class="underline">Quiz</a></li>
+        <li><a href="references.html" class="underline">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-3xl font-bold text-center mb-4">Framework Interactivity</h2>
+      <p class="text-center mb-6">Bootstrap includes built-in interactive components powered by JavaScript, while Tailwind CSS provides the flexibility to integrate interactivity with your preferred tools.</p>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-bold mb-2">Bootstrap’s Built-in Interactivity</h3>
+      <ul class="list-disc pl-6 mb-4">
+        <li>Includes JavaScript plugins for modals, carousels, dropdowns, and tooltips</li>
+        <li>No setup required — works out-of-the-box with bundled JS</li>
+        <li>Useful for prototyping and fast feature delivery</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-bold mb-2">Tailwind CSS and Custom Interactivity</h3>
+      <ul class="list-disc pl-6 mb-4">
+        <li>Does not include JavaScript by default</li>
+        <li>Encourages use of Alpine.js, Vue, React, or your own JS logic</li>
+        <li>Gives full control over behavior, ideal for custom UIs</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h3 class="text-2xl font-bold mb-4">Interactivity Comparison Table</h3>
+      <table class="table-auto w-full border border-gray-300 text-sm">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="p-2 border">Feature</th>
+            <th class="p-2 border bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700" >Bootstrap Use</th>
+            <th class="p-2 border bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700" >Tailwind CSS</th>
+           </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-2 border">Built-in Components</td>
+            <td class="p-2 border">Yes (JS plugins)</td>
+            <td class="p-2 border">No (add manually or use Alpine.js)</td>
+          </tr>
+          <tr>
+            <td class="p-2 border">Custom Interactivity</td>
+            <td class="p-2 border">Possible but more opinionated</td>
+            <td class="p-2 border">Highly customizable with modern frameworks</td>
+          </tr>
+          <tr>
+            <td class="p-2 border">Ease of Use</td>
+            <td class="p-2 border">Beginner-friendly</td>
+            <td class="p-2 border">Requires JS knowledge</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+     <main class="container-md px-4 py-10">
+    <section class="text-center">
+      <h2 class="text-xl bg-purple-400 font-bold text-center mb-4">Which CSS Framework Do You Prefer?</h2>
+      <form id="vote-form" class="vote-form">
+        <label>
+          <input type="radio" name="framework" value="Bootstrap" required />
+          Bootstrap
+        </label>
+        <label>
+          <input type="radio" name="framework" value="Tailwind CSS" />
+          Tailwind CSS
+        </label>
+        
+        <br><br>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-200" onclick="alert('Bootstrap-style interaction triggered!')">Submit Vote</button>
+       </form>
+      <div id="vote-result" class="mt-6 text-lg font-semibold text-green-600 hidden">
+        Thank you for voting!
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h3 class="text-2xl font-semibold mb-2">Try It Yourself</h3>
+      <p class="mb-4">Click the button below to see a simple Bootstrap-style interaction:</p>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-200" onclick="alert('Bootstrap-style interaction triggered!')">Click Me!</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white p-4 text-center">
+    <p>&copy; 2025 Bootstrap vs Tailwind CSS</p>
+  </footer>
+<script>
+    document.getElementById('vote-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('vote-result').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
