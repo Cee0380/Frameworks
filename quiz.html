@@ -53,34 +53,35 @@
 </style>
  
 <div class="container">
-    <h1>Responsive Design Quiz</h1>
-    <h1>Test your knowledge!</h1>
+   <h1 class="text-2xl font-bold text-center mb-6">Test Your Knowledge</h1> 
+    
   </div>
+  <p class="text-center font-semibold">Take this short quiz to see how well you understand Bootstrap and Tailwind CSS.</p>
   <script src="script.js"></script>
   <form id="quizForm">
     <div class="question">
-      <p>1. Which framework uses utility-first classes?</p>
+      <p class="text-1xl font-semibold"> 1. Which framework uses utility-first classes?</p> </p>
       <label><input type="radio" name="q1" value="Tailwind" /> Tailwind</label><br />
       <label><input type="radio" name="q1" value="Bootstrap" /> Bootstrap</label><br />
       <label><input type="radio" name="q1" value="Both" /> Both</label>
     </div>
 
     <div class="question">
-      <p>2. Which of the following is NOT a feature of Bootstrap?</p>
+      <p class="text-1xl font-semibold">2. Which of the following is NOT a feature of Bootstrap?</p>
       <label><input type="radio" name="q2" value="Grid system" /> Grid system</label><br />
       <label><input type="radio" name="q2" value="Utility-first approach" /> Utility-first approach</label><br />
       <label><input type="radio" name="q2" value="JavaScript components" /> JavaScript components</label>
     </div>
 
     <div class="question">
-      <p>3. Which framework provides prebuilt UI components by default?</p>
+      <p class="text-1xl font-semibold">3. Which framework provides prebuilt UI components by default?</p>
       <label><input type="radio" name="q3" value="Tailwind" /> Tailwind</label><br />
       <label><input type="radio" name="q3" value="Bootstrap" /> Bootstrap</label><br />
       <label><input type="radio" name="q3" value="None" /> None</label>
     </div>
 
 <div class="question">
-  <p>4. Fill in the blank: Tailwind CSS allows _______________ customization using utility classes.</p>
+  <p class="text-1xl font-semibold">4. Fill in the blank: Tailwind CSS allows _______________ customization using utility classes.</p>
   <input type="text" name="q4" id="q4Input" placeholder="Your answer here"/>
 </div>
 
@@ -100,7 +101,7 @@
 </script>
 
     <div class="question">
-      <p>5. Which of the following are true about Tailwind CSS? (Select all that apply)</p>
+      <p class="text-1xl font-semibold">5. Which of the following are true about Tailwind CSS? (Select all that apply)</p>
       <label><input type="checkbox" name="q5" value="Utility classes" /> Utility classes</label><br />
       <label><input type="checkbox" name="q5" value="Predefined themes" /> Predefined themes</label><br />
       <label><input type="checkbox" name="q5" value="Custom design flexibility" /> Custom design flexibility</label>
@@ -170,7 +171,7 @@
       document.getElementById("results").classList.remove("hidden");
     });
   </script>
-  <footer>
+  <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
 </body>
