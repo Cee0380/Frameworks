@@ -10,9 +10,10 @@
 </head>
  <body class="bg-gray-50 text-gray-900 font-sans">
   <header class="bg-blue-600 text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center">Bootstrap vs Tailwind CSS</h1>
-    <nav> 
-      <ul class="text-center mt-2 space-x-4">
+    <h1 class="text-3xl font-bold text-center">References</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <nav>
+      <ul id="mainMenu" class="menu text-center mt-2 space-x-4">
         <li><a href="index.html" class="underline">Home</a></li>
         <li><a href="comparison.html" class="underline">Comparison</a></li>
         <li><a href="features.html" class="underline">Features</a></li>
@@ -21,7 +22,7 @@
         <li><a href="quiz.html" class="underline">Quiz</a></li>
         <li><a href="references.html" class="underline">References</a></li>
       </ul>
-     </nav>
+    </nav>
   </header>
 
   <main class="container-md px-4 py-10">
@@ -86,5 +87,11 @@
   <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mainMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
