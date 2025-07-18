@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="style.css">
   <title>Comparison</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
+  <script defer src="script.js"></script>
+</head>
 <body class="bg-gray-50 text-gray-900 font-sans">
   <header class="bg-blue-600 text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center">Framework Comparison </h1>
- 
- <nav> 
-      <ul class="text-center mt-2 space-x-4">
+    <h1 class="text-3xl font-bold text-center">Framework Comparison</h1>
+    <nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+      <ul class="menu text-center mt-2 space-x-4" id="mainMenu">
         <li><a href="index.html" class="underline">Home</a></li>
         <li><a href="comparison.html" class="underline">Comparison</a></li>
         <li><a href="features.html" class="underline">Features</a></li>
@@ -23,18 +24,6 @@
         <li><a href="references.html" class="underline">References</a></li>
       </ul>
     </nav>
-  <script src="script.js"></script>
-  </header>
-<!-- comparison.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comparison | CSS Frameworks</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
   </header>
   <main>
     <h2 class="text-2xl font-bold mb-4 text-center">Bootstrap vs Tailwind</h2>
@@ -42,9 +31,8 @@
     <table>
       <tr>
         <th>Feature</th>
-        <th class="p-2 border bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700" >Bootstrap</th>
-            <th class="p-2 border bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700" >Tailwind CSS</th>
-      
+        <th class="p-2 border bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Bootstrap</th>
+        <th class="p-2 border bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Tailwind CSS</th>
       </tr>
       <tr>
         <td>Design Philosophy</td>
@@ -62,7 +50,7 @@
         <td>Favors teams who want detailed control and design-system scalability.</td>
       </tr>
     </table>
-    
+
     <section class="text-center mb-8">
       <h3 class="text-2xl font-semibold mt-4 mb-2">Explore Examples</h3>
       <p class="mb-4">See how each framework handles the same UI components:</p>
@@ -72,6 +60,13 @@
   <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mainMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
+
 
