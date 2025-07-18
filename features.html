@@ -1,22 +1,21 @@
-<!--features-->
+<!-- features.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Features | Bootstrap vs Tailwind CSS</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>Framework Features</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-
-  <!-- Header -->
-  <body class="bg-gray-50 text-gray-900 font-sans">
-  <header class="bg-blue-600 text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center">Bootstrap vs Tailwind CSS</h1>
-    <nav> 
-      <ul class="text-center mt-2 space-x-4">
+ <header class="bg-blue-600 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center">Framework Features</h1>
+    <!-- Mobile nav toggle -->
+    <button class="menu-toggle md:hidden" onclick="toggleMenu()">☰ Menu</button>
+    <nav>
+      <ul id="mainMenu" class="menu mt-2">
         <li><a href="index.html" class="underline">Home</a></li>
         <li><a href="comparison.html" class="underline">Comparison</a></li>
         <li><a href="features.html" class="underline">Features</a></li>
@@ -25,6 +24,7 @@
         <li><a href="quiz.html" class="underline">Quiz</a></li>
         <li><a href="references.html" class="underline">References</a></li>
       </ul>
+    </nav>
   </header>
 
   <!-- Main Content -->
@@ -109,5 +109,12 @@
   <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mainMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
+
