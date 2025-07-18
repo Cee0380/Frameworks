@@ -1,4 +1,4 @@
-<!--Use-cases.html-->
+<!--Use-cases-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +12,13 @@
 <body class="bg-gray-50 text-gray-900 font-sans">
 
   <!-- Header -->
-  <body class="bg-gray-50 text-gray-900 font-sans">
-  <header class="bg-blue-600 text-white p-6 shadow-md">
+   <body class="bg-gray-50 text-gray-900 font-sans">
+   <header class="bg-blue-600 text-white p-6 shadow-md">
     <h1 class="text-3xl font-bold text-center">Bootstrap vs Tailwind CSS</h1>
-    <nav> 
-      <ul class="text-center mt-2 space-x-4">
+    <!-- Mobile nav toggle -->
+    <button class="menu-toggle md:hidden" onclick="toggleMenu()">☰ Menu</button>
+    <nav>
+      <ul id="mainMenu" class="menu mt-2">
         <li><a href="index.html" class="underline">Home</a></li>
         <li><a href="comparison.html" class="underline">Comparison</a></li>
         <li><a href="features.html" class="underline">Features</a></li>
@@ -25,6 +27,7 @@
         <li><a href="quiz.html" class="underline">Quiz</a></li>
         <li><a href="references.html" class="underline">References</a></li>
       </ul>
+    </nav>
   </header>
 
   <!-- Main Content -->
@@ -104,7 +107,24 @@
    <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
+<script>
+    document.getElementById('vote-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('vote-result').classList.remove('hidden');
+      this.reset();
+    });
 
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mainMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
