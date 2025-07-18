@@ -5,24 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>Bootstrap vs Tailwind Quiz</title>
+  <title>Bootstrap vs Tailwind CSS</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
+  <script defer src="script.js"></script>
+</head>
 <body class="bg-gray-50 text-gray-900 font-sans">
   <header class="bg-blue-600 text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center">Bootstrap vs Tailwind CSS: Self Assessment Quiz</h1>
- <nav class="text-center mt-2 space-x-4"> 
-    <ul>
-      <li><a href="index.html" class="underline">Home</a></li>
+    <h1 class="text-3xl font-bold text-center">Frameworks Self-Assessment Quiz</h1>
+    <nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+      <ul class="menu text-center mt-2 space-x-4" id="mainMenu">
+        <li><a href="index.html" class="underline">Home</a></li>
         <li><a href="comparison.html" class="underline">Comparison</a></li>
         <li><a href="features.html" class="underline">Features</a></li>
-         <li><a href="use-cases.html" class="underline">Use Cases</a></li>
-      <li><a href="quiz.html" class="underline">Quiz</a></li>
-      </li><a href="interactivity.html" class="underline">Vote</a></li>
-      <li><a href="references.html" class="underline">References</a></li>
-    </ul>
-  </nav>
-  <script src="script.js"></script>
+        <li><a href="use-cases.html" class="underline">Use Cases</a></li>
+        <li><a href="interactivity.html" class="underline">Vote</a></li>
+        <li><a href="quiz.html" class="underline">Quiz</a></li>
+        <li><a href="references.html" class="underline">References</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
 
   </header>
   <style>
@@ -59,34 +62,34 @@
   <p class="text-center font-semibold">Take this short quiz to see how well you understand Bootstrap and Tailwind CSS.</p>
   <script src="script.js"></script>
   <form id="quizForm">
+    <fieldset>
     <div class="question">
       <p class="text-1xl font-semibold"> 1. Which framework uses utility-first classes?</p> </p>
       <label><input type="radio" name="q1" value="Tailwind" /> Tailwind</label><br />
       <label><input type="radio" name="q1" value="Bootstrap" /> Bootstrap</label><br />
       <label><input type="radio" name="q1" value="Both" /> Both</label>
     </div>
-
-    <div class="question">
-      <p class="text-1xl font-semibold">2. Which of the following is NOT a feature of Bootstrap?</p>
-      <label><input type="radio" name="q2" value="Grid system" /> Grid system</label><br />
+    </fieldset>  
+      <fieldset>
+        <legend class="font-semibold">2. Which of the following is NOT a feature of Bootstrap?</legend>
+       <label><input type="radio" name="q2" value="Grid system" /> Grid system</label><br />
       <label><input type="radio" name="q2" value="Utility-first approach" /> Utility-first approach</label><br />
       <label><input type="radio" name="q2" value="JavaScript components" /> JavaScript components</label>
-    </div>
-
-    <div class="question">
-      <p class="text-1xl font-semibold">3. Which framework provides prebuilt UI components by default?</p>
-      <label><input type="radio" name="q3" value="Tailwind" /> Tailwind</label><br />
+    </fieldset>
+   <fieldset>
+        <legend class="font-semibold">3. Which framework provides prebuilt UI components by default?</legend>
+        <label><input type="radio" name="q3" value="Tailwind" /> Tailwind</label><br />
       <label><input type="radio" name="q3" value="Bootstrap" /> Bootstrap</label><br />
       <label><input type="radio" name="q3" value="None" /> None</label>
-    </div>
-
-<div class="question">
-  <p class="text-1xl font-semibold">4. Fill in the blank: Tailwind CSS allows _______________ customization using utility classes.</p>
-  <input type="text" name="q4" id="q4Input" placeholder="Your answer here"/>
-</div>
+    </fieldset>
+      <fieldset>
+        <legend class="font-semibold">4. Fill in the blank: Tailwind CSS allows _______________ customization using utility classes.</legend>
+       <input type="text" name="q4" id="q4Input" placeholder="Your answer here"/>
+</fieldset>
 
 <!-- Output Area -->
 <p><strong>Your answer here:</strong> <span id="q4Input"></span></p>
+
 <script>
   // Display input live
   document.addEventListener('DOMContentLoaded', function() {
@@ -99,17 +102,17 @@
     }
    });
 </script>
-
-    <div class="question">
-      <p class="text-1xl font-semibold">5. Which of the following are true about Tailwind CSS? (Select all that apply)</p>
+</fieldset>
+<fieldset>
+        <legend class="text-1xl font-semibold">5. Which of the following are true about Tailwind CSS? (Select all that apply)</legend>
       <label><input type="checkbox" name="q5" value="Utility classes" /> Utility classes</label><br />
       <label><input type="checkbox" name="q5" value="Predefined themes" /> Predefined themes</label><br />
       <label><input type="checkbox" name="q5" value="Custom design flexibility" /> Custom design flexibility</label>
-    </div>
-
+   </fieldset>
    
     <button type="submit" onclick="submitQuiz()" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Submit Quiz</button>
     <button type="button" onclick="resetQuiz()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Restart Quiz</button>
+ </fieldset>
   </form>
    <div id="results" class="results hidden"></div>
 
@@ -174,5 +177,11 @@
   <footer class="bg-blue-800 text-white p-4 text-center">
     <p>&copy; 2025 CSS Frameworks Analysis</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mainMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
